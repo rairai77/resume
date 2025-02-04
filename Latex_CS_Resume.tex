@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{4.08003pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingEd}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------------------------------------
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+	\textbf{\Huge Raahil Jain} \\ \vspace{1pt}
+	\small (206) 779-8117 $|$ \href{mailto:rairai77@uw.edu}{\underline{rairai77@uw.edu}} $|$
+	\href{https://linkedin.com/in/raahil}{\underline{linkedin.com/in/raahil}}
+	$|$
+	\href{https://github.com/rairai77}{\underline{github.com/rairai77}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheadingEd
+{University of Washington}{Sept 2023- May 2027}
+{B.S. Computer Engineering $|$ \textbf{GPA}: 3.97}{Seattle, WA}
+\resumeItemListStart
+\resumeItem{\textbf{Courses}: Data Structures and Parallelism, Digital Design, Hardware Software Interface, Foundations of Computing, Data Visualiztion, Artificial Intelligence}
+\resumeItem{\textbf{Clubs}: Husky Coding Project}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      {\textbf{Languages}: Python, JavaScript, Java, C, HTML, CSS, PHP, Verilog, Rust}\\
+	      {\textbf{Technologies}: Node.js, React.js, PyTorch, Pandas, NumPy, MatPlotLib, RESTful APIs, OAuth authetnication, Object Oriented Programming, FPGAs}\\
+	      {\textbf{Tools}: Git, Tableau, Docker, RPC}}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\textbf{Research Assistant Intern} - University of Washington}{January 2025 -- Present}{}{}
+\resumeItemListStart
+\resumeItem{Designed and implemented a microservice cluster simulator to model large-scale distributed systems with thousands of services and devices}
+\resumeItem{Parsed 2TB of Alibaba's open source trace data using Python, Pandas, NumPy, and MatPlotLib to test and verify simulator accuracy}
+\resumeItem{Engineered RPc services in Rust with load balancing and containerization capabilities}
+\resumeItem{Simulated latency variation, network failures, and other irregularities to accurately model real life cluster conditions}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Founder - TheSEOStop}}{June 2019 -- Present}
+\resumeItemListStart
+\resumeItem{Designed and engineered a full stack web-based application from scratch to help busieness analyze and improve website SEO using Google's lighthouse metrics}
+\resumeItem{Created a clean, simple, and inuitive dashboard with bulk and scheduled actions for user convenience}
+\resumeItem{Satisfied the requirements of multiple paying customers}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Software Engineering Intern - Social27}}{Oct 2021 -- Jan 2022}
+\resumeItemListStart
+\resumeItem{Created a dynamic return on investment calculator with HTML and JavaScript that transferred vital customer data to multiple data stores (Google Sheets, Hubspot) through a multi-step pipeline}
+\resumeItem{Swiftly resolved many technical issues the company had been grappling with for months}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading for promotions/multiple levels of the same position under the same company
+%-------------------------------------------     
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{CrossMaps} $|$ \emph{NASA Space Hacks - Global Finalist}} {October 2024}
+\resumeItemListStart
+\resumeItem{Collaborated with a team of 6 to create an innovative pipeline generating 3D interactive maps using vector and raster data}
+\resumeItem{Developed a visualization technique allowing users to easily view the relationships between multiple variables on the same realistic LIDAR generated terrain}
+\resumeItem{Global Finalists putting us in the top \textbf{40/15000 (0.3\%)} of teams, competing with professional software engineers and data scientists! Won Best Use of Data for Space Hacks Seattle}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Homelessness Resources Project} $|$ \emph{Husky Coding Project}}{Oct 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Collaborating with a team of 5 to design and create a full stack React Native app for iOS, web, and Android}
+\resumeItem{Working with Expo, NativeWind, Supabase, and Google Maps}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\textbf{President, Technical Lead -  CS and Google Developer Student Club}}{2021 - 2023}
+\resumeItemListStart
+\resumeItem{Coordinated and hosted nationally broadcasted events on cloud computing an career preparation in \textbf{collaboration with Google}}
+\resumeItem{Lead and managed \textbf{500+ Members} and \textbf{100+ events} yearly}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
